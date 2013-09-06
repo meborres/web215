@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*
+	COLOR GUIDE
+	#F3B94D	
+	#A66D03		light
+	#733702		medium
+	#590202		dark
+	#260101		black
+*/
+
+@font-face
+{
+font-family: spartan;
+src:url(../_fonts/Spartan);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align:center;
+	font-family:spartan;
+	color:#333;
+	background: rgb(38,1,1);
+	background: -moz-linear-gradient(top,  rgba(38,1,1,1) 0%, rgba(166,109,3,1) 51%, rgba(38,1,1,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38,1,1,1)), color-stop(51%,rgba(166,109,3,1)), color-stop(100%,rgba(38,1,1,1)));
+	background: -webkit-linear-gradient(top,  rgba(38,1,1,1) 0%,rgba(166,109,3,1) 51%,rgba(38,1,1,1) 100%);
+	background: -o-linear-gradient(top,  rgba(38,1,1,1) 0%,rgba(166,109,3,1) 51%,rgba(38,1,1,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(38,1,1,1) 0%,rgba(166,109,3,1) 51%,rgba(38,1,1,1) 100%);
+}
+#wrapper{
+	width:960px;
+	height:100%;
+	margin: 40px auto 0px auto;
+	padding:0px;
+	border-radius: 15px;
+	background-color:#260101;
+	text-align: left;
+	box-shadow: 0px 0px 10px #000;
+}
+#header {
+	float:left;
+	height:500px;
+	width:300px;
+	padding:0px;
+}
+#logo {
+	background-color: blue;
+	height:200px;
+	width:300px;
+	background: url(../_images/cstarlogo_300.png);	
+}
+#nav {
+}
+#nav li {
+	display:block;
+	cursor:pointer;
+	height:30px;
+	border: 2px solid #733702;
+	text-align:center;
+	margin:10px 30px;
+	background-color:#A66D03;
+	color:#260101;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+#nav ul {
+	margin:0px;
+	padding:0px;
+}
+#content {
+	float:right;
+	height:430px;
+	width:530px;
+	color:#F3B94D;
+	padding:30px;
+	border-radius:15px;
+	margin:30px 40px 0 0;
+	background-color:#590202;
+	box-shadow: 0px 0px 15px #A66D03;
+}
+h1 {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.images {
+	background-color:#260101;
+	position:relative;
+	height:180px;
+	top:75px;
+	left:00px;
+	border-radius:15px;
+}
+.pics {
+	border: 2px solid #733702;
+	height:140px;
+	width:140px;
+	margin:18px 0 0 23px;
+}
+#footer {
+	clear:both;
+	padding:20px 30px;
+}
+#validation{	
+}

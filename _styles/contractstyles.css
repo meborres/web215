@@ -1,0 +1,54 @@
+/*
+COLORS
+	FFFF96
+	E6E587
+	BFBF71
+	807F4B
+	404026
+*/
+
+
+body {
+	background: url(../_images/brickwall.png);
+	padding: 0px;
+	text-align: center;
+}
+#wrapper {
+	background: #404026;
+	width: 600px;
+	margin: 40px auto 0px auto;
+	border: 15px solid #404026;
+	border-radius: 15px;
+	color:#BFBF71;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	text-align:right;
+	box-shadow: 10px 10px 15px #888888;
+}
+p {
+	margin: 15px 30px;
+	padding:0px 30px;
+}
+#contract {
+	background-color:#FFFF96;
+	padding:20px;
+	color:#404026;
+	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	text-align: center;
+	border-radius: 9px;
+	margin:10px;
+}
+h1, h2 {
+	margin: 15px 30px;
+}
+#time {
+	padding: 10px 30px 10px 0;
+	color:#FFFF96;
+	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	font-size: .8em;
+}
+#validate {
+	float: left;
+	margin: 5px 0 0 30px;
+}
+#time {
+}

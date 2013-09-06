@@ -1,0 +1,353 @@
+// alert
+alert('evening friends. like alerts? here they come. i suggest stopping them now. seriously. right now.');
+    // >alert
+    
+// data typeof() calls
+alert(typeof jibberish);
+    // >undefined
+alert(typeof true);
+    // >boolean
+alert(typeof "ima string");
+    // >string
+alert(typeof 7);
+    // >number
+alert(typeof [2,5,4]);
+    // >object
+function nonsense() {};
+alert(typeof nonsense);
+    // >function
+
+// . Number() calls
+alert(Number(true));
+    // >1
+alert(Number(12345));
+    // >12345
+alert(Number(null));
+    // >0
+//alert(Number(jibberish));
+    // >stops the program. commented this one out
+alert(Number('00345'));
+    // >345
+alert(Number('003.45'));
+    // >3.45
+alert(Number('0x58')); //(hex value)
+    // >88 
+alert(Number(''));
+    // >0
+alert(Number('im not a number'));
+    // >NaN
+
+// . parseInt() calls
+alert(parseInt('22B8', 16));
+    // >8888
+alert(parseInt('88', 10));
+    // >88
+alert(parseInt('1011000', 2));
+    // >88
+alert(parseFloat('0088.88.88.88'));
+    // >88.88
+
+// . unicode character literal 
+alert('\u00F8');
+    // >ø
+
+// . text.length
+alert("how many characters have we got here?".length);
+    // >37
+
+// . increment operator
+var friend = 4;
+friend++;
+alert(friend);
+    // >5
+
+// . decrement operator
+var friend = 4;
+friend--;
+alert(friend);
+    // >3
+
+// . increment strings
+var friend="4"
+friend++;
+alert(friend);
+    // >5    
+var friend = "four";
+friend++;
+alert(friend);
+    // >5
+var friend = "four of them";
+friend++;
+alert(friend);
+    // >NaN
+
+// increment a boolean
+var friend=true;
+friend++;
+alert(friend);
+    // >2
+
+// . unary plus 
+friend="0002.345";
+friend=+friend;
+alert(friend);
+    // >2.345
+friend="four";
+friend=+friend;
+alert(friend);
+    // >NaN
+
+// unary minus
+friend = 2;
+friend = -friend;
+alert(friend);
+    // >-2
+friend = true;
+friend = -friend;
+alert(friend);
+    // >-1
+
+// logical not
+alert(!true);
+    // >false
+alert(!"");
+    // >true
+alert(!"string");
+    // >false
+alert(!0);
+    // >true
+alert(!33);
+    // >false
+alert(!null);
+    // >true
+alert(!NaN);
+    // >true
+alert(!undefined);
+    //true
+
+// logical and
+alert(true && true);
+    // >true
+alert(true && false);
+    // >false
+alert(false && false);
+    // >false
+alert(1 && 2);
+    // >2
+
+// logical or
+alert(true || true);
+    // >true
+alert(true || false);
+    // >true
+alert(false || false);
+    // >false
+alert(1 || 2);
+    // >1
+alert(false || 2);
+    // >2
+
+// multiplicative operators
+alert(4 * 8);
+    // >32
+alert(4 * '8');
+    // >32
+alert(4 * 'eight');
+    // >NaN
+
+// divide
+alert(8 / 4);
+    // >2
+alert('8' / 4);
+    // >2
+alert('eight' / 4);
+    // >NaN
+
+// modulus
+alert(234 % 7);
+    // >3
+alert(Infinity % 7);
+    // >NaN
+
+// addition
+alert(8 + 8);
+    // >16
+alert("eight" + 8);
+    // >eight8
+alert('8' + 8);
+    // >88
+
+// subtraction
+alert(8-4);
+    // >4
+alert('8' - 4);
+    // >4
+alert('eight' - 4);
+    // >NaN
+alert(8 - true);
+    // >7
+
+// relational operators
+alert(8 < 4);
+    // >false
+alert(8 > 4);
+    // >true
+alert('eight' > 'four');
+    // >false
+alert('18' > '4');
+    // >false
+alert('18' > 4);
+    // >true
+alert('a' < 'b');
+    // >true
+alert('a' < 'B');
+    // >false
+
+// equality
+alert(4 == '4');
+    // >true
+alert(4 === '4');
+    // >false
+alert(true==1);
+    // >true
+alert(true===1);
+    // >false
+
+// conditional operator
+var trueStatement = (8 > 4) ? "yes it's true" : "no it's false";
+alert(trueStatement);
+    // >yes it's true
+var falseStatement = (8 < 4) ? "yes it's true" : "no it's false";
+alert(falseStatement);
+    // >no it's false
+
+// assignment
+var somevariable = 8;
+alert(somevariable);
+    // >8
+var somevariable = 8;
+somevariable = somevariable + 8;
+alert(somevariable);
+    // >16
+var somevariable = 8;
+somevariable += 8;
+alert(somevariable);
+    // >16
+
+// comma
+var num1=4, num2=8, num3=16;
+alert(num1, num2, num3);
+    // >4
+var num1=4, num2=8, num3=16;
+alert(num1 + num2 + num3);
+    // >28
+var num1=4, num2=8, num3=16;
+alert(num1+', ' + num2 + ', ' + num3);
+    // >4, 8, 16
+
+// if statement
+if(true) {
+    alert('true action taken');
+} else {
+    alert('false action taken');
+}
+    // >true action taken
+
+// else if statement
+if (!true) {
+    alert('true action taken, not this time');
+} else if (true) {
+    alert('true action taken');
+}else {
+    alert('false action taken');
+}
+	// >true action taken
+
+// do-while statement
+var i = 1;
+do {
+    alert(i);
+    i++;
+} while (i<=3);
+	// >1
+	// >2
+	// >3
+	
+// while statement
+var i = 1;
+while (i<=3) {
+	alert(i);
+	i++;
+}
+	// >1
+	// >2
+	// >3
+	
+// for statement
+for (var i=1; i<=3; i++) {
+	alert(i);
+	}
+	// >1
+	// >2
+	// >3
+	
+// for with break	
+for (var i=1; i<=3; i++) {
+	if (i % 2 == 0){
+	break;
+	}
+	alert(i);
+}
+	// >1
+	
+// with statement
+var stuff;
+with (stuff) {
+	var thisthing = 'mystuff';
+	var thatthing = 'also my stuff';
+	var everything = 'mine!';
+}
+alert(stuff.everything);
+	// >TypeError: undefined has no properties
+	// I don't get this one...
+	
+// switch statement
+var go = parseInt(prompt("1-5. whats your number?"));
+switch(go) {
+	case 1:
+		alert('tiny');
+		break;
+	case 2:
+		alert('small');
+		break;
+	case 3:
+		alert('medium');
+		break;	
+	case 4:
+		alert('large');
+		break;
+	default:
+		alert('wooooooow!');	
+}
+	// >...? - 4
+	// >large
+	
+// functions
+function helloWorld() {
+	alert('hello world.')
+}
+helloWorld();
+	// >hello world
+function doneyet() {
+	var areyou = prompt('are you done with this exercise yet?');
+	if (areyou.toLowerCase() == 'yes') {
+		alert('yay. great job. a+');
+	} else if (areyou.toLowerCase() == 'no') {
+		alert("really? we are so done here. thats gotta be 50 by now...");
+	} else {
+		alert('come on. just say yes or no');
+		doneyet();
+	}
+};
+doneyet();
+	// >yay. great job. a+
